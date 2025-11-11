@@ -37,7 +37,6 @@ This project was designed to:
 | **PL/SQL**                         | For writing the logic and output report |
 
 
-
 ## Project Files
 
 | File                      |               Description                               |
@@ -50,6 +49,12 @@ This project was designed to:
 
 ## How It Works
 
+## FIRST WE CREATE A PROCEDURE 
+
+
+![Creating Procedure](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/creating%20procedure.png?raw=true)
+
+
 1. **Record Definition**  
    A `RECORD` structure is created to represent each delivery, containing:
    - `location_name`
@@ -57,19 +62,34 @@ This project was designed to:
    - `weight_kg`
    - `status`
 
+![Inserting Data](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/inserting%20data.png?raw=true)
+
+
 2. **Collection (Table of Records)**  
    A nested table is declared to store all delivery records.
+
+![Creating Procedure](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/creating%20procedure.png?raw=true)
 
 3. **Processing Deliveries**  
    The program loops through all deliveries:
    - If a delivery **failed**, it’s skipped using `GOTO`.
    - If **delivered**, it adds its weight to the total delivered kilograms.
 
+![Main Processing Loop](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/main%20proccessing%20loop.png?raw=true)
+
+
+
+![Ending](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/ending.png?raw=true)
+
+
 4. **Report Generation**  
    At the end, the program prints a formatted report showing totals and statuses.
+
 
 ---
 
 ## Sample Output
+![Sample Output](https://github.com/IREMBERE/disaster_relief_tracker-plsql/blob/main/sample%20output.png?raw=true)
+
 
 
