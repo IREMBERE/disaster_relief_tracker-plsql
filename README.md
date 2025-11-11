@@ -43,7 +43,7 @@ This project was designed to:
 |---------------------------|---------------------------------------------------------|
 | `relief_tracker.sql`      | Main PL/SQL script that runs the program                |
 | `README.md`               | Documentation file (this one)                           |
-| `relief_report_table.sql` | Script for creating a permanent results table if needed |
+| `delivery_record.sql`     | Script for creating a permanent results table if needed |
 
 
 
